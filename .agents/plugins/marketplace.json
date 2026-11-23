@@ -1,0 +1,20 @@
+{
+  "name": "virlo",
+  "interface": {
+    "displayName": "Virlo Social Media Skills"
+  },
+  "plugins": [
+    {
+      "name": "social-media-skills",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Marketing"
+    }
+  ]
+}

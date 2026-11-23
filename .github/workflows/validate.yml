@@ -1,0 +1,30 @@
+name: validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  # Weekly: catches the API moving under the skills (a renamed or removed route).
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Skills, endpoints, links
+        run: node scripts/validate.mjs
+      - name: Sample reports are consistent (handles, links, no personal data)
+        run: node evals/check-samples.mjs
+      - name: Endpoint reference matches the live API spec
+        run: node scripts/gen-reference.mjs --check
+      - name: Manifests are valid JSON
+        run: for f in .claude-plugin/*.json .codex-plugin/*.json .agents/plugins/*.json; do node -e "JSON.parse(require('fs').readFileSync('$f','utf8'))" || exit 1; done

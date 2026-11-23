@@ -1,0 +1,12 @@
+{
+  "name": "social-media-skills",
+  "description": "Social media skills for Claude Code and AI agents: what's breaking out in your niche on TikTok, Instagram Reels and YouTube Shorts, why it worked, and what to post next. Outlier videos measured against each creator's own posts, proven hooks, trends, sounds, scripts, competitors, creators, comments and Meta ads, from Virlo's database of 23M+ analysed videos.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Virlo"
+  },
+  "homepage": "https://dev.virlo.ai/docs/skills",
+  "repository": "https://github.com/Virlo-AI/social-media-skills",
+  "license": "MIT",
+  "skills": "./skills/"
+}

@@ -1,0 +1,10 @@
+# Research output and caches from running the skills here
+virlo-research/
+# Keys
+.env
+.env.*
+!.env.example
+node_modules/
+.DS_Store
+
+evals/results/

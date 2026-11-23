@@ -1,0 +1,18 @@
+{
+  "name": "virlo",
+  "owner": {
+    "name": "Virlo",
+    "url": "https://dev.virlo.ai"
+  },
+  "metadata": {
+    "description": "Virlo's free social media skills for AI agents: TikTok, Instagram Reels, YouTube Shorts.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "social-media-skills",
+      "description": "17 free social media research skills for TikTok, Reels and Shorts: niche breakouts, trend radar, hook bank, sound scout, content ideas, scripts, competitor watch, creator and video teardowns, creator finder, audience voice, Meta ad watch, launch and niche monitors.",
+      "source": "./"
+    }
+  ]
+}
