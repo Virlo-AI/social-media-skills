@@ -2,7 +2,7 @@
 name: competitor-watch
 description: "Use when the user wants to spy on, benchmark or compare competitor brands or rival creators on TikTok, Instagram Reels or YouTube Shorts: what they post, which of their videos work and why, whether a campaign or launch is working or fading, or how the user's own account stacks up. Use it even for a quick \"what is @brand doing on TikTok\", so the answer is measured against each account's own typical views instead of raw views. Reads each account's latest posts live, measures how big an outlier every post is for that account, sorts posts by type (person-led, product drop, campaign, expert, creator partner, shop or live), shows what their best posts do that the rest don't, finds the gaps they leave open, and turns them into up to 3 moves the user can post this month. Not for one account's full playbook (creator-teardown), their Meta ads (ad-watch) or a whole niche (niche-breakouts). About $0.01 per account; a typical run is $0.03 to $0.06."
 license: MIT
-allowed-tools: Bash, Read, Write
+allowed-tools: Bash(bash *virlo.sh *) Bash(jq *) Bash(date *) Read Write
 metadata:
   author: Virlo
   version: 1.0.0

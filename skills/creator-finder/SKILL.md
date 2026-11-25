@@ -2,7 +2,7 @@
 name: creator-finder
 description: "Use when the user wants to find, shortlist or vet creators, influencers, micro-influencers or UGC creators on TikTok, Reels or Shorts for a partnership or campaign (by topic, a bio word such as dermatologist or nurse, follower range, account type, country or city), or asks whether an influencer is worth a fee, whether their numbers, views or followers are real, or whether to pay them. Use it even for one named creator (\"is @x worth $2,000?\"), so the answer rests on their live posts, not their profile. Searches Virlo's creator library, then vets each pick on their live posts (typical views, how many posts are 3× outliers or more, sponsored share, like rates on paid posts, posting gaps, claims risk), says what each fee costs per 1,000 of their typical views, and recommends yes, maybe or skip with reasons, a brief angle for each pick and a CSV. Optional: their inferred audience countries ($1 per creator, asks first). Not for one creator's content playbook (creator-teardown). About $0.10."
 license: MIT
-allowed-tools: Bash, Read, Write
+allowed-tools: Bash(bash *virlo.sh *) Bash(jq *) Bash(date *) Read Write
 metadata:
   author: Virlo
   version: 1.0.0

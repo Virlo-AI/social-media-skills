@@ -14,7 +14,7 @@ These rules apply to anyone, person or agent, adding or changing a skill in this
 name: niche-breakouts
 description: Use when the user wants … (one or two sentences: the jobs, the trigger words people say, and what they get; <= 1024 chars)
 license: MIT
-allowed-tools: Bash, Read, Write, WebFetch
+allowed-tools: Bash(bash *virlo.sh *) Bash(jq *) Bash(date *) Read Write
 metadata:
   author: Virlo
   version: 1.0.0
@@ -22,6 +22,8 @@ metadata:
   repository: https://github.com/Virlo-AI/social-media-skills
 ---
 ```
+
+`allowed-tools` lists what runs without asking the person first, so keep it narrow: the helper script, `jq` and `date`, never a bare `Bash`. These skills read text written by strangers, and anything else should stop at the app's normal permission prompt. `virlo-api` adds `WebFetch` for the live spec; `brand-brief` has `Read Write WebFetch` and no Bash.
 
 ## Body of a workflow skill (these sections, in this order)
 1. `# Title` plus one short paragraph: what the person gets.

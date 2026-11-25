@@ -2,7 +2,7 @@
 name: video-teardown
 description: "Use when the user asks about one TikTok, Reels or Shorts video: why it went viral, blew up, worked or flopped, whether it really popped or the account always gets those numbers, how it is structured, or how to reverse-engineer, recreate or remake it for their own brand. Also for the user's own post that flopped. Use it even before they paste the link (ask for it). Measures it against the creator's typical views, reads the live numbers (shared vs saved), checks whether it rode a sound or hashtag the creator rarely uses, reads the timed transcript beat by beat and the top comments, then gives the reasons in specifics and a filmable remix with openings to test. Not for a whole account (creator-teardown) or a niche (niche-breakouts). About $0.04; Virlo's full video analysis adds $0.50 on request."
 license: MIT
-allowed-tools: Bash, Read, Write
+allowed-tools: Bash(bash *virlo.sh *) Bash(jq *) Bash(date *) Read Write
 metadata:
   author: Virlo
   version: 1.0.0
