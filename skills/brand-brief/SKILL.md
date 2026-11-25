@@ -2,7 +2,7 @@
 name: brand-brief
 description: "Use when the user tells you who they are so future research fits them (\"set up my brand\", \"remember I'm a finance creator\", \"here's my brand\", \"my client is a gym in Austin\", \"save our competitors\"), wants Virlo research tailored to them, or wants to set up or update a brand, creator or client profile: what they sell, platforms, audience, voice, competitors and topics to avoid; or when another Virlo skill suggests creating a brief. Writes virlo-research/brief.md in one step from what they said, their website or their handle, with sensible defaults and at most three follow-up questions. Every Virlo research skill reads it first, so its searches, ideas, hooks and creator picks fit the user's audience, voice and avoid list. Agencies get one brief per client. Free; it calls no paid Virlo endpoint."
 license: MIT
-allowed-tools: Read, Write, WebFetch
+allowed-tools: Read Write WebFetch
 metadata:
   author: Virlo
   version: 1.0.0

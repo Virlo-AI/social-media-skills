@@ -2,7 +2,7 @@
 name: niche-monitor
 description: Use when the user wants ongoing research on a niche, topic, product category or competitors on TikTok, Reels and Shorts ("track this niche every week", "keep an eye on X for me", "send me a weekly digest", "alert me when something new breaks out", "set up always-on research"), wants this week's digest from a Virlo research agent they already have, or wants to change, pause or stop one. Sets up a Virlo research agent that collects fresh videos on the user's keywords on a schedule, only after the user approves the price, cadence and how to stop it, then writes a digest each run with what's new, what's still working, what faded, rising creators and sounds, and the 3 things to make this week. Reading an existing agent's results is free. Not for a one-time look at what's working now (niche-breakouts). $0.50 per run (about $2.15 a month weekly); always asked first.
 license: MIT
-allowed-tools: Bash, Read, Write
+allowed-tools: Bash(bash *virlo.sh *) Bash(jq *) Bash(date *) Read Write
 metadata:
   author: Virlo
   version: 1.0.0

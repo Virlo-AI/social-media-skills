@@ -84,7 +84,7 @@ The counts below come from Virlo's overviews of every match. "Breakouts" are the
 | Glow-up comment reply | TikTok | @sweigardstolberg56 | — | 196.4K | 15× | Nov 3 | [link](https://www.tiktok.com/@sweigardstolberg56/video/7703834143947345184) |
 | Five-product routine | TikTok | @v1ctorias.secret | 856 | 3.4M | unmeasured · VS 56.0 | Nov 7 | [link](https://www.tiktok.com/@v1ctorias.secret/video/7705477447835290902) |
 
-Followers and VS (Virality Score) are from Virlo's library. The rows without them were read only from the creator's live page, so their outlier is against the same page's median.
+Followers and VS (Virality Score) are from Virlo's library. The rows without them were read only from the creator's live page, so their outlier is against the same page's typical views.
 
 **Method:**
 - **Three library searches** for "skincare | skin care | skincare routine", `scope: virlo_library`, all platforms:
@@ -92,7 +92,7 @@ Followers and VS (Virality Score) are from Virlo's library. The rows without the
   - the same window with outliers only (`.cache/20261123-130025-v1-search-videos.json`);
   - Jul 26 – Oct 23 as the baseline (`.cache/20261123-130032-v1-search-videos.json`).
 - **Candidates:** each page re-sorted by `virality_score`; paid posts and likes under 0.5% of views removed; one per creator.
-- **Measured:** 8 creators on one live page each (`.cache/20261123-1301*-v1-raw-tiktok-creator-*-videos.json`), 3 of them reserved for the qualifying patterns. Each creator's typical views are the median of the creator's other posts on the page.
+- **Measured:** 8 creators on one live page each (`.cache/20261123-1301*-v1-raw-tiktok-creator-*-videos.json`), 3 of them reserved for the qualifying patterns. Each creator's typical views are what the creator's other posts on the page typically get.
 - **The index** says how much more often a pattern shows up among breakouts than among all posts. The trend compares shares now against Jul–Oct.
 
 **Spend:** $0.23 (3 searches at $0.05, 8 creator pages at $0.01), from `virlo.sh spend`.

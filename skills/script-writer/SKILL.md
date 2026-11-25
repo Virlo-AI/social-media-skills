@@ -2,7 +2,7 @@
 name: script-writer
 description: "Use when the user wants a script, voiceover, shot list, storyboard, talking points or timings for a TikTok, Reel or Short, asks what exactly to say or show on camera, or wants a content idea, hook or viral video turned into something they can film (\"write a 30 second TikTok about our new serum\"). Use it even for a quick one-off script about their product, so the script is modelled on a real breakout instead of made up. Writes shoot-ready scripts, each modelled on one cited outlier video (its timed transcript when it has speech), with second-by-second beats, on-screen text, a shot list, caption, hashtags, the comment to invite, a claims check, and brackets for facts only the user can supply. Not for choosing what to make (content-ideas) or opening lines only (hook-bank). About $0.01 a script; free when the source was already read; about $0.07 when it has to find a source first."
 license: MIT
-allowed-tools: Bash, Read, Write
+allowed-tools: Bash(bash *virlo.sh *) Bash(jq *) Bash(date *) Read Write
 metadata:
   author: Virlo
   version: 1.0.0

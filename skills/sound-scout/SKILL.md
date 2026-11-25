@@ -2,7 +2,7 @@
 name: sound-scout
 description: "Use when the user asks which TikTok, Reels or Shorts sounds, songs or audio are trending or blowing up, which sound to use on their next video or this week before it peaks, whether a specific song or sound is safe or cleared for a brand or business account (\"can our brand use this song?\"), or what a trending sound is actually being used for. Use it even for a quick ask, so the pick rests on live growth and clearance instead of a guess. Reads Virlo's breakout sounds (fastest-growing against their own normal weekly rate, with TikTok's commercial-use flag), opens the top candidates to see the format each one carries, and gives sounds to use now (each with how to film it), to watch and to avoid. Not for memes and formats in general (trend-radar). About $0.75; checking one named song $0.10 to $0.40."
 license: MIT
-allowed-tools: Bash, Read, Write
+allowed-tools: Bash(bash *virlo.sh *) Bash(jq *) Bash(date *) Read Write
 metadata:
   author: Virlo
   version: 1.0.0

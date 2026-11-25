@@ -14,6 +14,8 @@
 # re-read it for free. stdout gets one line: status, cost, balance, file.
 # The key comes from $VIRLO_API_KEY, else a VIRLO_API_KEY= line in
 # ~/.config/virlo/env or ./.env. It is only ever sent to api.virlo.ai.
+# GET inputs are name=value only, and [ ] { } in a path are sent as written:
+# one call is always one request.
 set -euo pipefail
 
 API="https://api.virlo.ai"
@@ -60,13 +62,18 @@ field() { # field NAME FILE: the first "NAME": value in a JSON reply, read witho
   grep -o "\"$1\": *\"\{0,1\}[^\",}]*" "$2" 2>/dev/null | head -n 1 | sed 's/^[^:]*: *"\{0,1\}//' || true
 }
 
+keep_out_of_git() { # saved replies hold the account balance: never let them into the user's repo
+  [ -e "$DIR/.gitignore" ] || printf '*
+' > "$DIR/.gitignore"
+}
+
 cmd="${1:-}"
 case "$cmd" in
   check)
     load_key || no_key
-    mkdir -p "$DIR"
+    mkdir -p "$DIR"; keep_out_of_git
     out="$DIR/$(date +%Y%m%d-%H%M%S)-account-balance.json"
-    code="$(auth | curl -K - -sS -o "$out" -w '%{http_code}' "$API/v1/account/balance")" || code=000
+    code="$(auth | curl -K - -sS --globoff -o "$out" -w '%{http_code}' "$API/v1/account/balance")" || code=000
     if [ "$code" = "200" ]; then
       echo "status=200 key=set balance=$(field balance "$out") credits=$(field credits_remaining "$out") file=$out"
       exit 0
@@ -87,7 +94,7 @@ case "$cmd" in
     ;;
   GET|POST|PUT|PATCH|DELETE) ;;
   *)
-    sed -n '2,16p' "$0" >&2
+    sed -n '2,18p' "$0" >&2
     exit 2
     ;;
 esac
@@ -96,7 +103,7 @@ path="${2:-}"
 case "$path" in /v1/*) ;; *) echo "path must start with /v1/ (got '$path')" >&2; exit 2 ;; esac
 shift 2
 load_key || no_key
-mkdir -p "$DIR"
+mkdir -p "$DIR"; keep_out_of_git
 
 slug="$(printf '%s' "$path" | tr -c 'A-Za-z0-9' '-' | sed 's/--*/-/g; s/^-//; s/-$//' | cut -c1-60)"
 stamp="$(date +%Y%m%d-%H%M%S)"
@@ -105,11 +112,17 @@ n=1
 while [ -e "$out" ]; do out="$DIR/$stamp-$slug-$n.json"; n=$((n + 1)); done
 hdr="$out.headers"
 
-args=(-sS -X "$cmd" -o "$out" -D "$hdr" -w '%{http_code}'
+args=(-sS --globoff -X "$cmd" -o "$out" -D "$hdr" -w '%{http_code}'
   -H "Accept: application/json")
 if [ "$cmd" = "GET" ] || [ "$cmd" = "DELETE" ]; then
   args+=(-G)
-  for kv in "$@"; do args+=(--data-urlencode "$kv"); done
+  for kv in "$@"; do
+    # name=value only: curl reads a local file for "name@file" or "@file", and that must never be sent
+    case "$kv" in
+      [A-Za-z0-9_]*=*) args+=(--data-urlencode "$kv") ;;
+      *) echo "query inputs are name=value (got '$kv')" >&2; exit 2 ;;
+    esac
+  done
 else
   body="${1:-}"
   if [ -n "$body" ]; then args+=(-H "Content-Type: application/json" --data-binary "$body"); fi

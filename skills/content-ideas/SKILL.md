@@ -2,7 +2,7 @@
 name: content-ideas
 description: "Use when the user asks what to post next, what to make this week, wants video or post ideas, a content plan, a content calendar or a week of posts for TikTok, Reels or Shorts, or says they're stuck or out of ideas in their niche (\"plan next week's TikToks for my bakery\", \"give me 5 ideas based on what's working\"). Use it even for a quick ask, so every idea stands on real breakouts instead of guesswork. Gives up to five original ideas for the user's brand or account, each built on named outlier videos (outlier, from Virlo data) and a pattern that over-performs and isn't crowded, with why now, why it works, a 3-shot plan, an opening line and which to post first. Says how many ideas passed the checks. Not for this week's memes (trend-radar), opening lines only (hook-bank) or a full script (script-writer). Reuses a recent niche-breakouts run for free; otherwise runs one (about $0.25)."
 license: MIT
-allowed-tools: Bash, Read, Write
+allowed-tools: Bash(bash *virlo.sh *) Bash(jq *) Bash(date *) Read Write
 metadata:
   author: Virlo
   version: 1.0.0

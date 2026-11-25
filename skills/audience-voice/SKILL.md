@@ -2,7 +2,7 @@
 name: audience-voice
 description: "Use when the user wants to know what their audience or a niche's viewers actually say, ask, want, doubt or complain about, in their own words, from TikTok, Reels or Shorts comments: \"what are people saying in the comments\", \"voice of customer\", \"comment research\", \"what objections or pain points come up\", \"what should our FAQ video answer\", \"what words do customers use\" (for hooks, ads or a landing page). Use it even for a quick ask, so every theme rests on real comments quoted word for word. Reads the comments under a niche's breakout videos (or the user's own), sorts them into praise, questions, requests, complaints and other, ranks themes by likes, lists the most-liked questions nobody answered and the exact words viewers repeat, then turns the strongest themes into videos and lines to make. Not for tracking the user's own launch over time (launch-monitor). About $0.06 for six videos, $0.11 with the search."
 license: MIT
-allowed-tools: Bash, Read, Write
+allowed-tools: Bash(bash *virlo.sh *) Bash(jq *) Bash(date *) Read Write
 metadata:
   author: Virlo
   version: 1.0.0

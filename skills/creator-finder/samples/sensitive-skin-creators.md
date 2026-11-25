@@ -77,7 +77,7 @@ Six higher-ranked matches were left out because their last post in the library i
 **Method:**
 - **One creator search** for "sensitive skin | skin barrier | skincare": individuals on TikTok with 10K–500K followers, sorted by top performing (`.cache/20261123-124807-v1-search-creators.json`). It returned 25 of 1,651; every filter was applied.
 - **Shortlist:** 5 creators, by library median against followers, on-topic videos and breakout count, after dropping anyone whose last post was before Oct 12.
-- **Vetting:** each on their live page of 15 latest posts (`.cache/20261123-1248*-v1-raw-tiktok-creator-*-videos.json`). Live typical views = the median of the page. "Sponsored" counts captions with AD, #ad, Anzeige, a discount code, a commission line, or a partner or ambassador tag; "tag a brand" counts captions that @-mention one. A skin outcome is a caption stating what a product did to skin.
+- **Vetting:** each on their live page of 15 latest posts (`.cache/20261123-1248*-v1-raw-tiktok-creator-*-videos.json`). Live typical views = what the page's posts typically get. "Sponsored" counts captions with AD, #ad, Anzeige, a discount code, a commission line, or a partner or ambassador tag; "tag a brand" counts captions that @-mention one. A skin outcome is a caption stating what a product did to skin.
 - **Verdicts follow the skill's bands:** a yes needs no captions stating results, so creators whose only doubt is claims are a maybe.
 
 **Spend:** $0.10 (search $0.05, 5 live pages at $0.01), from `virlo.sh spend`.

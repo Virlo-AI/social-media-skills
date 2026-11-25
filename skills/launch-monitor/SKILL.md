@@ -2,7 +2,7 @@
 name: launch-monitor
 description: Use when the user asks how their recent posts, a launch or a campaign are doing on TikTok, Reels or Shorts right now ("how is my video doing?", "how did my last 5 posts do?", "is this post taking off or flopping?", "did our launch work?", "check it again tomorrow"), pastes a post link and asks how it's going, or wants to know what commenters are saying under it. Use it even for one quick check, so the answer is measured against the account's own typical views, not raw views. Reads live counts, compares each post with the account's typical views from before the launch and with the last saved check, flags stalled, boosted or comment-off posts, quotes the comments, and ends with one action per post (a follow-up for a post that's taking off, or one change to test after one that's below typical). Not for a full breakdown of why one video worked (video-teardown) or benchmarking a rival (competitor-watch). About $0.01 to $0.05 a check; ongoing tracking is optional and asked first.
 license: MIT
-allowed-tools: Bash, Read, Write
+allowed-tools: Bash(bash *virlo.sh *) Bash(jq *) Bash(date *) Read Write
 metadata:
   author: Virlo
   version: 1.0.0
@@ -38,7 +38,7 @@ Not for: benchmarking a rival (what they post, what works for them, the gaps the
 2. **Typical views:** what the posts **before** the launch window typically got, from the same page (`../virlo-api/references/method.md` §1). Say which dates it covers.
    - Never use posts newer than the launch post. If the page holds only newer posts and `has_more` is true, read the next page ($0.01).
    - With no launch date given, the window is the last 7 days and typical views come from the posts before it.
-   - List bought reach in the baseline apart (paid, or under 0.5% likes on a post with 1,000+ views). It stays in the median; if 3 or more baseline posts look bought, say typical views aren't all organic reach.
+   - List bought reach in the baseline apart (paid, or under 0.5% likes on a post with 1,000+ views). It stays in typical views; if 3 or more baseline posts look bought, say typical views aren't all organic reach.
    - Say the days since the latest post. If it's over 14, say the account has gone quiet before calling any post stalled.
 3. **Each post in the window:** outlier, likes, comments, shares and saves per view, and age in hours or days.
 4. **Since the last check:**

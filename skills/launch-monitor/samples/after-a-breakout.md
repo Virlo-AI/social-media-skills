@@ -62,6 +62,6 @@ None needed for these posts: they've settled. Check the next post 24 hours after
 **Method:**
 - **This check:** one live page (`.cache/20261123-125333-v1-raw-tiktok-creator-grahamsnatural-videos.json`), read at 12:53:35 UTC.
 - **The earlier check:** the same page read at 12:33:54 UTC for the niche-breakouts run (`.cache/20261123-123354-…`). No saved check existed, so `virlo-research/launch/grahamsnatural.jsonl` was started with that read and this one appended.
-- **Typical views** = the median of the posts before Nov 5 on the page. Comments came from the audience-voice run's page (`.cache/20261123-124547-v1-raw-tiktok-video-comments.json`).
+- **Typical views** = what the posts before Nov 5 on the page typically got. Comments came from the audience-voice run's page (`.cache/20261123-124547-v1-raw-tiktok-video-comments.json`).
 
 **Spend:** $0.01 (one page), from `virlo.sh spend`.

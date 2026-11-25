@@ -69,7 +69,7 @@ Only 1 of the 4 on-type videos was an outlier, so this is 1 move, not 3. The cof
 - **Places:** a place search for "cafe" in Melbourne, AU: 21 places, ranked by Virlo's tagged-video count.
 - **Videos:** a library search for "cafe | coffee shop | coffee" tagged in Melbourne since Aug 25, by Virality Score: 6 matches, flagged thin. Every video's tag checked as Melbourne, AU.
 - **The venue:** the 2 videos tagged at FiLLi Cafe, Carlton.
-- **Creators:** one page of latest posts each for the 3 on-type creators in the first search (typical views = median of their other posts).
+- **Creators:** one page of latest posts each for the 3 on-type creators in the first search (typical views = what their other posts typically get).
 - **The wider search:** 5 km around FiLLi Cafe's map point, same topic and window: 7 matches, the same 6 plus 1.
 - Files: `virlo-research/.cache/20261123-124914-v1-places.json`, `20261123-124916-v1-search-videos.json`, `20261123-124935-v1-places-c3fbac16-8b9d-4f57-bb0d-0c2eff6cef86-videos.json`, `20261123-124944`/`124948`/`124951-v1-raw-tiktok-creator-*-videos.json`, `20261123-125004-v1-search-videos.json`. Brief: `virlo-research/brief.md` (copy in `briefs/melbourne-cafe.md`).
 

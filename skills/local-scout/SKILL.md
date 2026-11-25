@@ -2,7 +2,7 @@
 name: local-scout
 description: "Use when a local business (cafe, restaurant, bar, salon, gym, clinic, shop, studio) or a brand asks what's working on TikTok or Instagram Reels in their city, suburb, postcode or near an address: \"TikTok ideas for my cafe in Melbourne\", \"what do people film near us\", \"what's trending near me\", \"which venues around here get tagged most\", \"local creators who review places like mine\". Use it even for a quick local ask, so the answer rests on real videos tagged in the area, not guesses. Finds the places creators tag nearby, the videos tagged there ranked by Virality Score, which of them are outliers for their creator, and the local creators behind them, then gives up to 3 filmable moves. Says plainly when coverage is thin (few posts carry a place tag, and Shorts carry none) and offers the next step. Not for niche-wide trends with no place (niche-breakouts), and never for tracking a person. About $0.15 to $0.25."
 license: MIT
-allowed-tools: Bash, Read, Write
+allowed-tools: Bash(bash *virlo.sh *) Bash(jq *) Bash(date *) Read Write
 metadata:
   author: Virlo
   version: 1.0.0
