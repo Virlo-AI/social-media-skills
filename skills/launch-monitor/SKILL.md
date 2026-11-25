@@ -38,7 +38,7 @@ Not for: benchmarking a rival (what they post, what works for them, the gaps the
 2. **Typical views:** what the posts **before** the launch window typically got, from the same page (`../virlo-api/references/method.md` §1). Say which dates it covers.
    - Never use posts newer than the launch post. If the page holds only newer posts and `has_more` is true, read the next page ($0.01).
    - With no launch date given, the window is the last 7 days and typical views come from the posts before it.
-   - List bought reach in the baseline apart (paid, or under 0.5% likes on a post with 1,000+ views). It stays in the median; if 3 or more baseline posts look bought, say typical views aren't all organic reach.
+   - List bought reach in the baseline apart (paid, or under 0.5% likes on a post with 1,000+ views). It stays in typical views; if 3 or more baseline posts look bought, say typical views aren't all organic reach.
    - Say the days since the latest post. If it's over 14, say the account has gone quiet before calling any post stalled.
 3. **Each post in the window:** outlier, likes, comments, shares and saves per view, and age in hours or days.
 4. **Since the last check:**

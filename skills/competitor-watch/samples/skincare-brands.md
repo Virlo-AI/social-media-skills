@@ -88,7 +88,7 @@
 **Method:**
 - **One live page of 15 latest posts per account** on TikTok: `.cache/20261123-125105-v1-raw-tiktok-creator-cerave-videos.json`, `.cache/20261123-125110-v1-raw-tiktok-creator-rhode-videos.json`, and @grahamsnatural's page reused from today's niche-breakouts run (`.cache/20261123-123354-…`).
 - **Account check:** the pages don't return a display name or verified badge, so the handles were taken as the brands' main accounts from their captions (product names, brand hashtags) and not otherwise confirmed.
-- **Typical views** = the median of the page. **Each post's outlier** is against the account's other 14 posts. Low-like-rate and paid posts stay in typical views but out of the best three and the types.
+- **Typical views** = what the page's posts typically get. **Each post's outlier** is against the account's other 14 posts. Low-like-rate and paid posts stay in typical views but out of the best three and the types.
 - **Types** come from captions only. One best-three post with no caption text was checked by transcript (`.cache/20261123-125209-v1-raw-tiktok-video-transcript.json`): no speech, so format unknown.
 
 **Spend:** $0.03 (two pages and one transcript at $0.01), from `virlo.sh spend`.

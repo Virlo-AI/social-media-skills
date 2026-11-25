@@ -92,7 +92,7 @@ Consistency counts the latest 15 posts on the live page that ran at 3× or more 
 **Method:**
 - **One creator search** for "fitness | workout | gym": individuals with 20K–300K followers on all platforms, `sort: rising` (`.cache/20261123-133703-v1-search-creators.json`). It returned 25 of 206; every filter was applied.
 - **Shortlist:** 10, the skill's maximum per run, by library median against followers, on-topic videos and breakout count, with stale library dates ranked lower.
-- **Vetting:** each on one live page (`.cache/20261123-1337*-v1-raw-*-creator-*-videos.json`), using the 15 latest posts (YouTube pages return 20). Live typical views = the median of those 15; consistency = posts at 3×+ the median of the other 14. Sponsored counts captions with a code, an ad label or a brand tag.
+- **Vetting:** each on one live page (`.cache/20261123-1337*-v1-raw-*-creator-*-videos.json`), using the 15 latest posts (YouTube pages return 20). Live typical views = what those 15 typically get; consistency = posts at 3×+ against the other 14. Sponsored counts captions with a code, an ad label or a brand tag.
 - **Not done:** the audience check ($1.00 a creator) and the next 10 ($0.15).
 
 **Spend:** $0.15 (search $0.05, 10 live pages at $0.01), from `virlo.sh spend`.

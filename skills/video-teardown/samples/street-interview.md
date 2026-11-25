@@ -11,7 +11,7 @@
 |---|---|---|---|---|---|---|---|
 | 3.5M | **246×** (typical views 14,200) | 201,500 (5.8%) | 2,753 | 43,900 (**1.25%**) | 30,993 (0.89%) | 34 s | Nov 10, 01:46 |
 
-- **Typical views:** the median of the 15 other posts on the creator's live page, all posted Nov 19–23, newer than this video (the page doesn't reach back to Nov 10).
+- **Typical views:** what the 15 other posts on the creator's live page typically got, all posted Nov 19–23, newer than this video (the page doesn't reach back to Nov 10).
 - **Repeat check:** 2 other posts on the page at 10×+, both street interviews: [470.1K](https://www.tiktok.com/@beautystreet0/video/7709684715166485793) (33×) and [234.6K](https://www.tiktok.com/@beautystreet0/video/7709680740593650977) (17×). **Repeatable.**
 - **Rode:** nothing found. The sound is the account's own ("original sound", BeautyStreet), and the hashtags (#retinol, #vitaminc, #erborian) are topic words, not a trend.
 - **Organic:** 5.8% likes per view and no paid label.

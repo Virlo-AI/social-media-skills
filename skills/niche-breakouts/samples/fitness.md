@@ -85,7 +85,7 @@ Followers and VS (Virality Score) are from Virlo's library; views are live where
   - the same window with outliers only (`.cache/20261123-132325-v1-search-videos.json`);
   - Jul 26 – Oct 23 as the baseline (`.cache/20261123-132331-v1-search-videos.json`).
 - **Candidates:** each page re-sorted by `virality_score`; paid posts and likes under 0.5% of views removed; one per creator.
-- **Measured:** 8 creators on one live page each (`.cache/20261123-1324*-v1-raw-*-creator-*-videos.json`), 3 of them reserved for qualifying patterns. Each creator's typical views are the median of the creator's other posts on the page.
+- **Measured:** 8 creators on one live page each (`.cache/20261123-1324*-v1-raw-*-creator-*-videos.json`), 3 of them reserved for qualifying patterns. Each creator's typical views are what the creator's other posts on the page typically get.
 - **The index** says how much more often a pattern shows up among breakouts than among all posts. The trend compares shares now against Jul–Oct.
 
 **Spend:** $0.23 (3 searches at $0.05, 8 creator pages at $0.01), from `virlo.sh spend`.
