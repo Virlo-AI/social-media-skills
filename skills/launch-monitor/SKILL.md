@@ -2,7 +2,7 @@
 name: launch-monitor
 description: Use when the user asks how their recent posts, a launch or a campaign are doing on TikTok, Reels or Shorts right now ("how is my video doing?", "how did my last 5 posts do?", "is this post taking off or flopping?", "did our launch work?", "check it again tomorrow"), pastes a post link and asks how it's going, or wants to know what commenters are saying under it. Use it even for one quick check, so the answer is measured against the account's own typical views, not raw views. Reads live counts, compares each post with the account's typical views from before the launch and with the last saved check, flags stalled, boosted or comment-off posts, quotes the comments, and ends with one action per post (a follow-up for a post that's taking off, or one change to test after one that's below typical). Not for a full breakdown of why one video worked (video-teardown) or benchmarking a rival (competitor-watch). About $0.01 to $0.05 a check; ongoing tracking is optional and asked first.
 license: MIT
-allowed-tools: Bash(bash *virlo.sh *) Bash(jq *) Bash(date *) Read Write
+allowed-tools: Bash(bash *virlo.sh* *) Bash(jq *) Bash(date *) Read Write
 metadata:
   author: Virlo
   version: 1.0.0

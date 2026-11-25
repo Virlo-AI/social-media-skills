@@ -2,7 +2,7 @@
 name: virlo-api
 description: Use when calling Virlo for short-form video research on TikTok, YouTube Shorts and Instagram Reels, over its API or MCP server, or when the user asks how to set up or connect Virlo, where to get a key, whether their key works, what their balance is, what a call costs, or why a Virlo call failed (401, 402, 429). Covers searching Virlo's analysed video and creator library, hooks, sounds, hashtags, Content Trends, Topic Trends, places, creator and video lookups, live posts, comments and transcripts, Meta ads, research agents and tracking. It is the data layer, setup guide, cost guide and research method that every other Virlo research skill uses; read it before any Virlo call. Checking the key and the balance is free.
 license: MIT
-allowed-tools: Bash(bash *virlo.sh *) Bash(jq *) Bash(date *) Read Write WebFetch
+allowed-tools: Bash(bash *virlo.sh* *) Bash(jq *) Bash(date *) Read Write WebFetch
 metadata:
   author: Virlo
   version: 1.0.0

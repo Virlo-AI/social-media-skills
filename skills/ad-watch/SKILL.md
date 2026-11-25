@@ -2,7 +2,7 @@
 name: ad-watch
 description: Use when the user wants to spy on a brand's or competitor's Meta ads (Facebook, Instagram, Messenger, Threads), see what ads are running for a keyword, product or problem in a country, check the Facebook Ad Library, or get ad angles, hooks and offers to test ("what ads is Gymshark running?", "show me competitor ads for protein powder", "what offers are they pushing for Black Friday?", "ad inspiration for my niche"). Use it even for a quick look, so the answer quotes the real ads instead of guessing. Reads the Meta Ad Library live, groups the ads by product, message, offer and format, shows how long each has run and what is new or was stopped, drops keyword noise, and ends with up to 3 ad angles to test, each built on named ads and written in the user's own words. Not for organic TikTok, Reels or Shorts posts (competitor-watch) or hooks from organic breakouts (hook-bank). About $0.01 per brand or keyword; a typical run is $0.01 to $0.05.
 license: MIT
-allowed-tools: Bash(bash *virlo.sh *) Bash(jq *) Bash(date *) Read Write
+allowed-tools: Bash(bash *virlo.sh* *) Bash(jq *) Bash(date *) Read Write
 metadata:
   author: Virlo
   version: 1.0.0

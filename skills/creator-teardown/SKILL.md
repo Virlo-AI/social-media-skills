@@ -2,7 +2,7 @@
 name: creator-teardown
 description: "Use when the user asks about one creator or brand account on TikTok, Reels or Shorts: how they grow, what their formula, content strategy or content pillars are, which videos outperform, when they post, what format they repeat, or what to copy from them (\"break down @creator\", \"reverse-engineer this account\", \"how does this account get so many views\"). Use it even before they name the handle (ask for it). Reads the live profile and latest posts, groups posts into pillars with each pillar's median views and hit rate, finds the outliers against the creator's own typical views, reads the timed transcripts of the top two, gives posting cadence and best time slot, and ends with a playbook to borrow plus a first video built in their structure for the user. Not for one video (video-teardown), comparing several accounts (competitor-watch) or finding creators to hire (creator-finder). About $0.04."
 license: MIT
-allowed-tools: Bash(bash *virlo.sh *) Bash(jq *) Bash(date *) Read Write
+allowed-tools: Bash(bash *virlo.sh* *) Bash(jq *) Bash(date *) Read Write
 metadata:
   author: Virlo
   version: 1.0.0
