@@ -14,7 +14,7 @@ These rules apply to anyone, person or agent, adding or changing a skill in this
 name: niche-breakouts
 description: Use when the user wants … (one or two sentences: the jobs, the trigger words people say, and what they get; <= 1024 chars)
 license: MIT
-allowed-tools: Bash(bash *virlo.sh *) Bash(jq *) Bash(date *) Read Write
+allowed-tools: Bash(bash *virlo.sh* *) Bash(jq *) Bash(date *) Read Write
 metadata:
   author: Virlo
   version: 1.0.0

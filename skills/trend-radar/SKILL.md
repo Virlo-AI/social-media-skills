@@ -2,7 +2,7 @@
 name: trend-radar
 description: "Use when the user asks what trend to jump on this week, what's trending or viral on TikTok, Reels or Shorts right now, which formats, memes or templates are spreading, which sounds are breaking out, or what people are talking about today, and which of those fit their brand, business or creator account (\"any memes we could do?\", \"what's trending this week for a coffee brand?\"). Use it even for a quick ask, so the pick rests on live counts instead of last week's lists. Combines Virlo's Content Trends (formats creators are copying, with their lifecycle: new, rising, peaking, fading), Topic Trends (subjects people discuss today) and breakout sounds with their commercial-use clearance, then ranks them by timing, fit, brand safety and effort. You get up to 3 do-now moves, each with a shot list for your account and a proof video, plus watch and skip lists. Not for what works in one niche over the month (niche-breakouts) or a deep sound pick (sound-scout). Typical run $0.75, up to $0.90."
 license: MIT
-allowed-tools: Bash(bash *virlo.sh *) Bash(jq *) Bash(date *) Read Write
+allowed-tools: Bash(bash *virlo.sh* *) Bash(jq *) Bash(date *) Read Write
 metadata:
   author: Virlo
   version: 1.0.0

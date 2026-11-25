@@ -2,7 +2,7 @@
 name: hook-bank
 description: "Use when the user wants hooks, opening lines, first lines, intros, scroll-stoppers or attention grabbers for TikTok, Reels or Shorts, asks how to open or start their next video, wants the first 3 seconds fixed or their own first lines rewritten, or asks which hook styles work in their niche. Use it even for a quick ask like \"give me 5 hooks\", so every hook is modelled on a real opening that worked instead of made up. Pulls verbatim hooks from Virlo's database of real hooks (this month's top hooks in the category plus hooks that mention the niche), shows which hook types hit a strong Virality Score most often there (often not the most common ones), drops paid and boosted sources, then writes six hooks for the user (or as many as asked), each with on-screen text, a first frame and the cited source it borrows from. Not for whole video ideas (content-ideas) or full scripts (script-writer). Typical run $0.50; rewriting your own lines $0.25."
 license: MIT
-allowed-tools: Bash(bash *virlo.sh *) Bash(jq *) Bash(date *) Read Write
+allowed-tools: Bash(bash *virlo.sh* *) Bash(jq *) Bash(date *) Read Write
 metadata:
   author: Virlo
   version: 1.0.0

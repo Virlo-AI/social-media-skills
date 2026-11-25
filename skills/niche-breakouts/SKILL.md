@@ -2,7 +2,7 @@
 name: niche-breakouts
 description: "Use when the user asks what is going viral, breaking out, blowing up, trending or working right now in a niche, topic, industry or product category on TikTok, Instagram Reels or YouTube Shorts, and why (\"what's working in skincare?\", \"why are these videos blowing up?\", \"which formats and hooks work for SaaS founders?\"). Use it even for a quick ask, so the answer rests on measured breakouts instead of the biggest accounts. Finds the outlier videos (N× outlier, measured against each creator's other posts, not raw views), what those breakouts share that the rest of the niche doesn't (formats and hook types that over-perform, climb, fade or are crowded), which views were bought, and up to 3 moves to film next, each tied to a cited video. Not for this week's memes or sounds (trend-radar), one creator (creator-teardown) or one video (video-teardown). Typical run about $0.25."
 license: MIT
-allowed-tools: Bash(bash *virlo.sh *) Bash(jq *) Bash(date *) Read Write
+allowed-tools: Bash(bash *virlo.sh* *) Bash(jq *) Bash(date *) Read Write
 metadata:
   author: Virlo
   version: 1.0.0
